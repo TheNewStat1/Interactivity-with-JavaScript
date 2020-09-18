@@ -16,20 +16,19 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Link to your css file -->
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/12_JS_Events_Ex.css">
+	<script src="scripts/12_JS_Events_Ex.js"></script>
 
 </head>
 
-<body>
-	<!-- Start coding here -->
-	<h2 id="test">Tester</h2>
-	<h2>Tester</h2>
-	<script>
-		document.getElementById('test').innerHTML = "Hello World";
-	</script>
-	<p>What happens if you have two elements with id = "test"?</p>
+<body onload="message('LOAD')" onresize="message('RESIZE')">
+	<h1>JavaScript Events - Responding to Events</h1>
+	<p onclick="message('CLICK')">It is possible to call functions based on Events</p>
 
+	<p onmouseover="message('MouseOver')">Click on the paragraph above to trigger an <em>onclick</em> event. Reload the page to see an onload event</p>
+
+	<p id="output">
+	<p>
 </body>
 
 </html>
-

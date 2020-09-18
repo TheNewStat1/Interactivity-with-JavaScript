@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -16,20 +15,27 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Link to your css file -->
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/10_JS_simple_ex.css">
+	<script src="scripts/10_JS_simple_ex.js"></script>
 
 </head>
 
 <body>
 	<!-- Start coding here -->
-	<h2 id="test">Tester</h2>
-	<h2>Tester</h2>
-	<script>
-		document.getElementById('test').innerHTML = "Hello World";
-	</script>
-	<p>What happens if you have two elements with id = "test"?</p>
 
-</body>
+	<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/Colleen82.jpg" alt="Awesome 80's haircut" onclick="console.log(this.alt)">
 
-</html>
+	<div onclick="console.log(this.innerHTML)">Hi There, checking out a div</div>
 
+	<hr>
+
+	<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/FamilyChristmas74.jpg" alt="Another Beautiful Picture" id="ID-1" onclick="displayId(this)">
+
+	<div onclick="displayId(this)" id="ID-2">Another Div</div>
+
+
+	<!-- Coding End -->
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</body></html>
